@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp"
+android:background="#f0f0f0">
+
+<!-- Header -->
+<TextView
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Facebook"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:background="#3b5998"
+    android:textColor="#ffffff"
+    android:padding="16dp" />
+
+<!-- Profile Picture -->
+<ImageView
+    android:id="@+id/profile_picture"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:layout_below="@id/header"
+    android:layout_marginTop="16dp"
+    android:contentDescription="Profile Picture"
+    android:layout_alignParentStart="true" />
+
+<!-- Name -->
+
+    <!-- Status Update TextField -->
+<EditText
+    android:id="@+id/status_update"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/profile_picture"
+    android:layout_marginTop="16dp"
+    android:hint="What's on your mind?"
+    android:background="#ffffff"
+    android:padding="12dp"
+    android:inputType="textMultiLine"
+    android:lines="3" />
+
+<!-- Post Button -->
+<Button
+    android:id="@+id/post_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/status_update"
+    android:layout_marginTop="8dp"
+    android:text="Post"
+    android:layout_alignParentEnd="true" />
+
+<!-- News Feed Section -->
+<TextView
+    android:id="@+id/news_feed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/status_update"
+    android:layout_marginTop="16dp"
+    android:text="News Feed"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+
+<!-- Sample Post -->
+<LinearLayout
+    android:id="@+id/sample_post"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/news_feed"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a sample post!"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 hours ago"
+        android:textSize="12sp"
+        android:textColor="#888888" />
+</LinearLayout>
+
+</RelativeLayout>
